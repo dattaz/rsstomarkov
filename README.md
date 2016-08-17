@@ -3,8 +3,7 @@ This repo is for generation text from rss with markov chain
 ##SETUP
 You only need to do this 1 time :
 
-cd markov
-make
+pushd markov/ ; make ; popd
 
 This for compiling code osurce of markov generator from http://codes-sources.commentcamarche.net/source/52286-generateur-de-textes-aleatoires-coherents-chaines-de-markov
 
