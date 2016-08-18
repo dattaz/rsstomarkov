@@ -14,10 +14,12 @@
 <body>
 <p> This is a sentences generated with markov chain with last post of XXX : </p>
 <?php
+include 'Parsedown.php';
+$Parsedown = new Parsedown();
 $fichier = file("sentenceswithoutrepetition");
 srand((double)microtime()*1000000);
 $nb = rand(0,numberofsentences);
-echo "<h2>".$fichier[$nb]."</h2>";
+echo "<h2>".$Parsedown->text($fichier[$nb])."</h2>";
 ?>
 
 </body>

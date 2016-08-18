@@ -13,6 +13,7 @@ python 1sentencesbyligne.py |  awk '{if (x[$0] != "") next ; print $0 ; x[$0]=$0
 mkdir $foldername
 cp tmp/sentenceswithoutrepetition $foldername/.
 cp index.php $foldername/.
+cp Parsedown.php $foldername/.
 nbofligne=$(wc -l tmp/sentenceswithoutrepetition |sed 's/^\(.*\) .*/\1/')
 echo $nbofligne
 sed -i "s/numberofsentences/$nbofligne/" $foldername/index.php

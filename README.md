@@ -1,5 +1,6 @@
 This repo is for generation text from rss with markov chain
 
+/!\ this branch convert all in Markdown, do markov stuff and then convert back to html. IMO sentences are better
 ##SETUP
 You only need to do this 1 time :
 
